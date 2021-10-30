@@ -1,0 +1,395 @@
+@font-face {
+  font-family: 'Roboto-Light';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/Roboto-Light.ttf') format('truetype');
+}
+html,body{
+  font-family: 'Roboto-Light', Calibri, Arial, sans-serif;
+  min-width: 300px;
+}
+/*rev default start*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+*,*:after,*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+a{
+  text-decoration: none;
+}
+a:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+a:hover,
+a:active {
+  outline: 0;
+}
+h1, h2, h3, h4, h5{
+  font-weight: normal;
+}
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  font-size: 100%;
+  vertical-align: middle;
+}
+button,
+input {
+  *overflow: visible;
+  line-height: normal;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+input::placeholder{
+  color: #000;
+  opacity: .7;
+}
+span.index.markthis{
+  background: #cddc39;
+}
+/* rev_Default < end >*/
+:root {
+  --theme-font-color: #000;
+  --theme-hov:#fff176;
+  --theme-actv:#fff59d;
+  --theme-actv2:#fff9c4;
+}
+a{
+  color: var(--theme-font-color);
+}
+/*rev default /end*/
+
+body{
+  max-width: 800px;
+  margin: 10px auto;
+  padding: 0 10px;
+}
+header, .semsclss h1, .engclasses ul > li, .engclasses h1, .semsclss ul li{
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+header {
+  padding: 20px;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 10px;
+}
+header h1{
+  text-transform: uppercase;
+}
+a.pdf{
+  display: block;
+  font-variant: small-caps;
+  text-align: center;
+  font-weight: bold;
+}
+a.pdf b{
+  color: red;
+}
+footer{
+  text-align: center;
+  text-transform: uppercase;
+  display: none;
+}
+section#error{
+  background: #fff;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  font-size: 1.5em;
+}
+div#errmsg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  text-transform: capitalize;
+}
+div#errmsg h1 {
+  font-size: 5em;
+  font-weight: bold;
+  text-shadow: -2px 7px 0px #E0E0E0, -1px 10px 0px #757575;
+  font-family: monospace;
+}
+div#errmsg h2{
+  margin-bottom: 10px;
+}
+a.close {
+  position: absolute;
+  height: 100%;
+  right: 0;
+  top: 0;
+  width: 69px;
+  line-height: 69px;
+  text-align: center;
+  border-left: 1px solid;
+}
+.semsclss ul{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.semsclss ul li{
+  width: 49.2%;
+  margin-bottom: 10px;
+}
+.semsclss ul li a{
+  display: block;
+  padding: 40px 0;
+  text-align: center;
+  font-size: 1.5em;
+  text-transform: capitalize;
+}
+.sec{
+  display: none;
+}
+.render{
+  display: block !important;
+}
+.semsclss h1, .engclasses ul > li, .engclasses h1{
+  margin-bottom: 10px;
+  padding: 20px;
+  text-transform: capitalize;
+  position: relative;
+}
+ul > li.module{
+  cursor: pointer;
+}
+.engclasses ul li span, .engclasses ul li h5{
+  position: absolute;
+  right: 20px;
+}
+.engclasses ul li span{
+  bottom: 30px;
+  font-size: 2em;
+  opacity: 0.5;
+}
+.engclasses ul li h5 {
+  bottom: 10px;  
+  font-size: 1em;
+}
+.engclasses ul li h2 i {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-style: normal;
+  transition: .2s ease-in;
+}
+.engclasses ul li.links{
+  display: none;
+  border-radius: 0px 0px 3px 3px;
+}
+li.links ol{
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+li.links ol li {
+  width: 48%;
+  margin: 5px;
+  border: 1px solid;
+}
+li.links ol li a{
+  padding: 10px;
+  display: block;
+}
+.bgflip {
+  background: var(--theme-actv);
+  margin-bottom: 0px !important;
+  border-bottom: none !important;
+  border-radius: 3px 3px 0 0 !important;
+
+}
+/*media q*/
+@media only screen and (max-width: 720px){
+  li.links ol li{
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 650px){
+  header h1 {
+    font-size: 1.5em;
+  }
+  header h2 {
+    font-size: 1.3em;
+  }
+}
+@media only screen and (max-width: 520px){
+  /*header, .semsclss ul li, .semsclss h1,.engclasses h1, .engclasses ul > li{
+    margin-bottom: 5px;
+  }*/
+  header h1 {
+    font-size: 1.1em;
+  }
+  header h2 {
+    font-size: 1em;
+  }
+  .semsclss ul li{
+    /*width: 49.4%;*/
+    width: 100%;
+  }
+  .semsclss h1,.engclasses h1{
+    padding: 15px 10px;
+    font-size: 1.2em;
+  }
+  .semsclss ul li a {
+    padding: 20px 0;
+    font-size: 1.1em;
+  }
+  a.close{
+    width: 53px;
+    line-height: 53px;
+  }
+  .engclasses ul > li {
+    padding: 10px;
+  }
+  .engclasses ul li span, .engclasses ul li h5{
+    right: 10px;
+  }
+  .engclasses ul li h2 i{
+    right: 10px;
+  }
+  .module h2{
+    font-size: 1.2em;
+  }
+  .module h3{
+    font-size: 1em;
+  }
+  .module h4{
+    font-size: 0.9em;
+  }
+  .engclasses ul li span {
+    top: 30px;
+    font-size: 1.1em;
+  }
+  .engclasses ul li h5 {
+    font-size: 0.7em;
+  }
+  li.links ol{
+    padding: 10px;
+  }
+  li.links ol li{
+    margin: 2px;
+  }
+  li.links ol li a{
+    padding: 7px;
+  }
+}
+@media only screen and (max-width: 380px){
+  header, .semsclss h1, .engclasses ul > li, .engclasses h1, .semsclss ul li{
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+  }
+  body{
+    padding: 0;
+  }
+  header {
+    padding: 15px;
+  }
+  header h1,header h2 {
+    font-size: 0.9em;
+  }
+  .semsclss h1, .engclasses h1 {
+    padding: 10px;
+    font-size: 1.1em;
+  }
+  a.close {
+    width: 41px;
+    line-height: 41px;
+  }
+  li.links ol {
+    padding: 0;
+  }
+  li.links ol li a {
+    padding: 5px;
+    font-size: 0.8em;
+  }
+}
+@media only screen and (max-width: 340px){
+  .module h2{
+    font-size: 1em;
+  }
+  .module h3{
+    font-size: .8em;
+  }
+  .module h4{
+    font-size: 0.7em;
+  }
+  .engclasses ul li span {
+    top: 25px;
+    font-size: 0.9em;
+  }
+  .engclasses ul li h5 {
+    font-size: 0.6em;
+  }
+}
+@media print { 
+  body{
+    max-width: 640px;
+    margin-top: 30px;
+  }
+  a.close{
+    display: none;
+  }
+  .semsclss h1, .engclasses ul > li, .engclasses h1{
+    padding: 10px 20px;
+  }
+  a.pdf{
+    display: none;
+  }
+  footer{
+    display: block;
+    margin-top: 30px;
+ }
+ .engclasses ul li h2 i{
+    display: none;
+ }
+}
+/*hovers*/
+.semsclss ul li, a.close, li.links ol li{
+  transition: .2s ease-in;
+}
+/*target only bg*/
+.engclasses ul > li{
+  transition: background .2s ease-in;
+}
+.semsclss ul li:hover, a.close:hover, .engclasses ul > li:not(li.links):hover, li.links ol li:hover{
+  background: var(--theme-hov);
+}
+li.module:hover i{
+  font-weight: bold;
+}
+
+/*hide sems*/
+/*#semesters ul li:nth-child(2n){
+  display: none;
+}*/
