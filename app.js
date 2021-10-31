@@ -1,14 +1,22 @@
+//Author: Rashid Saad
+//31/10/2021
+//Beni Melll Morocco
+
 let sets = [];
 const autogen = document.getElementById("autogen");
-fetchtData = (url) => {
+
+fetchtData = (url, divID) => {
 	fetch(url).then(response => {
 		return response.json();
 	})
 	.then(
 		json => {
-			printData(json, semestersDiv);
+			printData(json, divID);
 			render(decodeURI(window.location.hash),'#');
 		})
+	.catch(function(err) {
+	  	console.log("Error:"+err);
+	});
 }
 
 printData = (data, divID) =>{
@@ -58,7 +66,7 @@ printData = (data, divID) =>{
 			});
 
 			// time table pdf
-			sclass += `<a href="tb/${classSecID}.pdf" target="_blank" class="pdf">save as <b>pdf</b></a>`;
+			sclass += `<a href="tb/${classSecID}.pdf" target="_blank" class="savepdf">save as <b class="red">pdf</b></a>`;
 			sclass += "</ul></section>";
 
 			autogen.insertAdjacentHTML('beforeend', sclass);
@@ -104,7 +112,7 @@ printData = (data, divID) =>{
 }
 
 render = (url) => {
-	let secs 	= ['','semesters'].concat(sets),
+	let secs 	= ['','semesters', 'info'].concat(sets),
 	sec 		= url.slice(1),
 	index 		= secs.indexOf(sec);
 
@@ -115,13 +123,12 @@ render = (url) => {
 	document.getElementById(sec).classList.add('render');
 };
 
-renderNow = () =>{render(decodeURI(window.location.hash))}
+renderNow = () => {render(decodeURI(window.location.hash))}
 
+function init(){
+	window.onhashchange = renderNow;
 
-
-const semestersDiv = document.getElementById('semesters');
-const url = "data.json";
-
-fetchtData(url);
-
-window.onhashchange = renderNow;
+	const semestersDiv = document.getElementById('semesters');
+	const url = "data.json";
+	fetchtData(url, semestersDiv);
+}

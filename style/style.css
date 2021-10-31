@@ -1,3 +1,7 @@
+/*Author: Rashid Saad*/
+/*31/10/2021*/
+/*Beni Melll Morocco*/
+
 @font-face {
   font-family: 'Roboto-Light';
   font-style: normal;
@@ -71,6 +75,20 @@ input::placeholder{
 span.index.markthis{
   background: #cddc39;
 }
+
+/* sb */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
 /* rev_Default < end >*/
 :root {
   --theme-font-color: #000;
@@ -88,27 +106,24 @@ body{
   margin: 10px auto;
   padding: 0 10px;
 }
-header, .semsclss h1, .engclasses ul > li, .engclasses h1, .semsclss ul li{
+header, .semsclss h1, .engclasses ul > li, .engclasses h1, .semsclss ul li, #info h1{
   border: 1px solid #000;
   border-radius: 3px;
 }
 header {
   padding: 20px;
-  text-transform: capitalize;
   text-align: center;
   margin-bottom: 10px;
 }
 header h1{
   text-transform: uppercase;
 }
-a.pdf{
-  display: block;
-  font-variant: small-caps;
-  text-align: center;
-  font-weight: bold;
+header h2{
+  text-transform: capitalize;
 }
-a.pdf b{
-  color: red;
+a.savepdf{
+  display: block;
+  text-align: center;
 }
 footer{
   text-align: center;
@@ -173,7 +188,7 @@ a.close {
 .render{
   display: block !important;
 }
-.semsclss h1, .engclasses ul > li, .engclasses h1{
+.semsclss h1, .engclasses ul > li, .engclasses h1, #info h1{
   margin-bottom: 10px;
   padding: 20px;
   text-transform: capitalize;
@@ -221,12 +236,42 @@ li.links ol li a{
   padding: 10px;
   display: block;
 }
+/*info*/
+
+#infotrgr{
+  margin-bottom: 10px;
+  font-size: 12px;
+  text-align: center;
+}
+#info ul{
+  text-align: center;
+  margin-bottom: 10px;
+}
+#info ul li {
+    border: 1px solid;
+    padding: 10px 0;
+    border-bottom: none;
+}
+#info ul li:first-of-type{
+  background: var(--theme-actv);
+  font-weight: bold;
+  margin-top: 10px;
+  border-radius: 3px 3px 0 0;
+}
+#info ul li:last-of-type{
+  border-bottom: 1px solid;
+}
+/*misc class*/
 .bgflip {
   background: var(--theme-actv);
   margin-bottom: 0px !important;
   border-bottom: none !important;
   border-radius: 3px 3px 0 0 !important;
-
+}
+.red{
+  color: red;
+  font-variant: small-caps;
+  font-weight: bold;
 }
 /*media q*/
 @media only screen and (max-width: 720px){
@@ -256,7 +301,7 @@ li.links ol li a{
     /*width: 49.4%;*/
     width: 100%;
   }
-  .semsclss h1,.engclasses h1{
+  .semsclss h1,.engclasses h1, #info h1{
     padding: 15px 10px;
     font-size: 1.2em;
   }
@@ -304,7 +349,7 @@ li.links ol li a{
   }
 }
 @media only screen and (max-width: 380px){
-  header, .semsclss h1, .engclasses ul > li, .engclasses h1, .semsclss ul li{
+  header, .semsclss h1, .engclasses ul > li, .engclasses h1, #info h1, .semsclss ul li, #info ul li, #info ul li:first-of-type{
     border-radius: 0;
     border-left: none;
     border-right: none;
@@ -318,7 +363,7 @@ li.links ol li a{
   header h1,header h2 {
     font-size: 0.9em;
   }
-  .semsclss h1, .engclasses h1 {
+  .semsclss h1, .engclasses h1, #info h1 {
     padding: 10px;
     font-size: 1.1em;
   }
@@ -360,10 +405,10 @@ li.links ol li a{
   a.close{
     display: none;
   }
-  .semsclss h1, .engclasses ul > li, .engclasses h1{
+  .semsclss h1, .engclasses ul > li, .engclasses h1, #info h1{
     padding: 10px 20px;
   }
-  a.pdf{
+  a.savepdf{
     display: none;
   }
   footer{
@@ -390,6 +435,6 @@ li.module:hover i{
 }
 
 /*hide sems*/
-/*#semesters ul li:nth-child(2n){
+#semesters ul li:nth-child(2n){
   display: none;
-}*/
+}
