@@ -92,9 +92,9 @@ span.index.markthis{
 /* rev_Default < end >*/
 :root {
   --theme-font-color: #000;
-  --theme-hov:#fff176;
-  --theme-actv:#fff59d;
-  --theme-actv2:#fff9c4;
+  --theme-actv:#eeeeee;
+  --theme-bg: #fafafa;
+  --theme-border: #e0e0e0;
 }
 a{
   color: var(--theme-font-color);
@@ -106,8 +106,9 @@ body{
   margin: 10px auto;
   padding: 0 10px;
 }
-header, .semsclss h1, .engclasses ul > li, .engclasses h1, .semsclss ul li, #info h1{
-  border: 1px solid #000;
+header, .semsclss h1, .engclasses ul > li, .engclasses h1, .semsclss ul li, #info h1, #info ul li{
+  background: var(--theme-bg);
+  border: 1px solid var(--theme-border);
   border-radius: 3px;
 }
 header {
@@ -131,7 +132,7 @@ footer{
   display: none;
 }
 section#error{
-  background: #fff;
+  background: var(--theme-bg);
   height: 100%;
   position: absolute;
   width: 100%;
@@ -150,7 +151,7 @@ div#errmsg {
 div#errmsg h1 {
   font-size: 5em;
   font-weight: bold;
-  text-shadow: -2px 7px 0px #E0E0E0, -1px 10px 0px #757575;
+  text-shadow: -2px 7px 0px var(--theme-border), -1px 10px 0px #757575;
   font-family: monospace;
 }
 div#errmsg h2{
@@ -164,7 +165,7 @@ a.close {
   width: 69px;
   line-height: 69px;
   text-align: center;
-  border-left: 1px solid;
+  border-left: 1px solid var(--theme-border);
 }
 .semsclss ul{
   display: flex;
@@ -220,6 +221,7 @@ ul > li.module{
 .engclasses ul li.links{
   display: none;
   border-radius: 0px 0px 3px 3px;
+  background: var(--theme-border);
 }
 li.links ol{
   display: flex;
@@ -230,11 +232,13 @@ li.links ol{
 li.links ol li {
   width: 48%;
   margin: 5px;
-  border: 1px solid;
+  border: 1px solid var(--theme-border);
 }
 li.links ol li a{
   padding: 10px;
   display: block;
+  background: var(--theme-bg);
+  border-radius: 3px;
 }
 /*info*/
 
@@ -248,9 +252,9 @@ li.links ol li a{
   margin-bottom: 10px;
 }
 #info ul li {
-    border: 1px solid;
     padding: 10px 0;
     border-bottom: none;
+    border-radius: 0;
 }
 #info ul li:first-of-type{
   background: var(--theme-actv);
@@ -259,13 +263,13 @@ li.links ol li a{
   border-radius: 3px 3px 0 0;
 }
 #info ul li:last-of-type{
-  border-bottom: 1px solid;
+  border-bottom: 1px solid var(--theme-border);
 }
 /*misc class*/
 .bgflip {
-  background: var(--theme-actv);
+  background: var(--theme-actv) !important;
   margin-bottom: 0px !important;
-  border-bottom: none !important;
+  border-bottom: 1px solid #bdbdbd !important;
   border-radius: 3px 3px 0 0 !important;
 }
 .red{
@@ -420,15 +424,15 @@ li.links ol li a{
  }
 }
 /*hovers*/
-.semsclss ul li, a.close, li.links ol li{
+.semsclss ul li, a.close, li.links ol li a{
   transition: .2s ease-in;
 }
 /*target only bg*/
 .engclasses ul > li{
   transition: background .2s ease-in;
 }
-.semsclss ul li:hover, a.close:hover, .engclasses ul > li:not(li.links):hover, li.links ol li:hover{
-  background: var(--theme-hov);
+.semsclss ul li:hover, a.close:hover, .engclasses ul > li:not(li.links):hover, li.links ol li:hover a{
+  background: var(--theme-actv);
 }
 li.module:hover i{
   font-weight: bold;
