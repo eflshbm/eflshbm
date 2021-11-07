@@ -1,17 +1,23 @@
 //Author: Rashid Saad
+// contact: eflshbm@gmail.com
 //31/10/2021
 //Beni Melll Morocco
 
 let sets = [];
-const autogen = document.getElementById("autogen");
+const 
+	smstrSec = document.getElementById('semesters'),
+	autogen	 = document.getElementById("autogen"),
+	logsSec	 = document.getElementById("logs"),
+	quoteDiv = document.getElementById("quote");
 
-fetchtData = (url, divID) => {
+
+fetchtData = (url) => {
 	fetch(url).then(response => {
 		return response.json();
 	})
 	.then(
 		json => {
-			printData(json, divID);
+			printData(json);
 			render(decodeURI(window.location.hash),'#');
 		})
 	.catch(function(err) {
@@ -19,7 +25,9 @@ fetchtData = (url, divID) => {
 	});
 }
 
-printData = (data, divID) =>{
+printData = (data) =>{
+
+	// semesters
 
 	let section = '<ul>';
 	data.semesters.map(ENGsemester=>{
@@ -28,11 +36,10 @@ printData = (data, divID) =>{
 		const smstrSecID = `semester${semesterID}`;
 		sets.push(smstrSecID);
 		section += `<li><a href="#${smstrSecID}">${semesterHD}</a></li>`;
-		let semester = `<section id="${smstrSecID}" class='semsclss sec'><h1>${semesterHD} classes<a href="#" class="close">X</a></h1><ul>`;
+		let semester = `<section id="${smstrSecID}" class='semsclss sec'><h1 class="heading">${semesterHD} classes<a href="#" class="close">X</a></h1><ul>`;
 		ENGsemester.classes.map(ENGclass => {
 			const className = ENGclass.className;
 
-			// const modules = ENGclass.modules;
 			// sort modules
 			const modules = ENGclass.modules.sort((a,b)=>{return  parseInt(a.order) - parseInt(b.order)});
 
@@ -43,7 +50,7 @@ printData = (data, divID) =>{
 			semester += `<li><a href="#${classSecID}">${className}</a></li>`;
 
 			let sclass = `<section id="${classSecID}" class="sec engclasses">
-			<h1>${semesterHD} / ${className}<a href="#${smstrSecID}" class="close">X</a></h1><ul>`;
+			<h1 class="heading">${semesterHD} / ${className}<a href="#${smstrSecID}" class="close">X</a></h1><ul>`;
 			modules.map(ENGmodule => {
 				sclass += `<li id="${classSecID}m${ENGmodule.id}" class="module">
 				<span>M${ENGmodule.id}</span>
@@ -66,7 +73,7 @@ printData = (data, divID) =>{
 			});
 
 			// time table pdf
-			sclass += `<a href="tb/${classSecID}.pdf" target="_blank" class="savepdf">save as <b class="red">pdf</b></a>`;
+			sclass += `<a href="tb/${classSecID}.pdf" target="_blank" class="savepdf">save timetable as <b class="red">pdf</b></a>`;
 			sclass += "</ul></section>";
 
 			autogen.insertAdjacentHTML('beforeend', sclass);
@@ -77,7 +84,43 @@ printData = (data, divID) =>{
 
 	section +="</ul>";
 
-	divID.insertAdjacentHTML('beforeend', section);
+	smstrSec.insertAdjacentHTML('beforeend', section);
+
+	// logs
+	let logs = "<ul><li>+ added / # edited</li>";
+
+	let i = 1;
+	data.logs.map(log=>{
+		// add show more if i = 5 / hide if > 5
+		i > 5 ?
+			logs += `<li class="sec"><h3><span>${log.op}</span> ${log.details}</h3><p>${timeSince(Date.parse(log.date))}</li>` :  
+			logs += `<li><h3><span>${log.op}</span> ${log.details}</h3><p>${timeSince(Date.parse(log.date))}</li>`;
+		i == 5 ? 
+				logs += `<li id="morelogs">+ More Logs</li>` : false;
+		i++;
+	});
+
+	logs += "</ul>";
+	logsSec.insertAdjacentHTML('beforeend', logs);
+
+	// show more logs
+	document.getElementById("morelogs").onclick = function(){
+		const locaTop = this.offsetTop;
+		this.remove();
+		const listofHiddenLogs = document.querySelectorAll('li.sec');
+		listofHiddenLogs.forEach(li =>{
+			li.classList.remove("sec");
+		});
+		window.scrollTo({top: locaTop, behavior: 'smooth'});
+	}
+
+	// quotes
+	const
+		rndNum = Math.floor(Math.random() * data.quotes.length),
+		dataQuote = data.quotes[rndNum],
+		quote = `<p>${dataQuote.quote}</p><span>${dataQuote.by}</span>`;
+
+	quoteDiv.insertAdjacentHTML('beforeend', quote);
 
 	// A_ module li click show cours
 
@@ -102,33 +145,96 @@ printData = (data, divID) =>{
 		}
 	});
 
-	// enlarge last ol>li if len = 1
-	y = document.querySelectorAll('.engclasses ul li.links ol');
-	y.forEach(ol => {
-		if(ol.childElementCount == 1){
-			ol.lastElementChild.style.width = "100%";
-		}
+	// enlarge last ol>li if %2 = 1
+	const olist = document.querySelectorAll('.engclasses ul li.links ol');
+	olist.forEach(ol => {
+		ol.childElementCount%2 == 1 ? ol.lastElementChild.style.width = "100%" : false;
 	});
 }
 
 render = (url) => {
-	let secs 	= ['','semesters', 'info'].concat(sets),
+	let secs 	= ['','semesters', 'about', 'news', 'logs'].concat(sets),
 	sec 		= url.slice(1),
 	index 		= secs.indexOf(sec);
 
 	index === -1 ? sec = 'error' : sec == '' ? sec = 'semesters' : false;
 	
-	const allSecs = document.querySelectorAll('section.sec');
-	allSecs.forEach(sec => sec.classList.remove('render'));
+	const rendredSec = document.querySelector("section.render");
+	rendredSec ? rendredSec.classList.remove("render") : false;
 	document.getElementById(sec).classList.add('render');
+
+	// menu (active item)
+	// remove active
+	const active = document.querySelector("li.active");
+	active ? active.classList.remove("active") : false;
+	// add active
+	const item = document.querySelector(`menu ul li[data-name=${sec}]`);
+	item ? item.classList.add("active") : false;
 };
 
+// fix + call @ printData
 renderNow = () => {render(decodeURI(window.location.hash))}
 
 function init(){
 	window.onhashchange = renderNow;
 
-	const semestersDiv = document.getElementById('semesters');
 	const url = "data.json";
-	fetchtData(url, semestersDiv);
+	fetchtData(url);
 }
+
+function timeSince(date) {
+
+  var secs = Math.floor((new Date() - date) / 1000);
+
+  var intVal = Math.floor(secs / 31536000);
+  if (intVal >= 1) {
+  	if(intVal > 1){
+  		return intVal + " years ago";
+  	}
+  	else if(intVal = 1){
+  		return "a year ago";
+  	}
+  }
+
+  intVal = Math.floor(secs / 2592000);
+  if (intVal >= 1) {
+  	if(intVal > 1){
+  		return intVal + " months ago";
+  	}
+  	else if(intVal = 1){
+  		return "a month ago";
+  	}
+  }
+
+  intVal = Math.floor(secs / 86400);
+  if (intVal >= 1) {
+  	if(intVal > 1){
+  		return intVal + " days ago";
+  	}
+  	else if(intVal = 1){
+  		return "a day ago";
+  	}
+  }
+
+  intVal = Math.floor(secs / 3600);
+  if (intVal >= 1) {
+  	if(intVal > 1){
+  		return intVal + " hours ago";
+  	}
+  	else if(intVal = 1){
+  		return "an hour ago";
+  	}
+  }
+
+  intVal = Math.floor(secs / 60);
+  if (intVal >= 1) {
+  	if(intVal > 1){
+  		return intVal + " minutes ago";
+  	}
+  	else if(intVal = 1){
+  		return "a minutes ago";
+  	}
+  }
+
+  return Math.floor(secs) + " seconds ago";
+};

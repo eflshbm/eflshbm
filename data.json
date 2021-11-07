@@ -692,7 +692,8 @@
 					"name": "Extensive Reading",
 					"Pr.HANDOUR": [
 						"1_M15_LECTURE_1&2_HANDOUR",
-						"2_M15_LECTURE_3&4_HANDOUR"
+						"2_M15_LECTURE_3&4_HANDOUR",
+						"3_M15_LECTURE_5_HANDOUR"
 					]
 				},
 				{
@@ -702,7 +703,8 @@
 						"1_M16_LECTURE_1_HADARI",
 						"2_M16_LECTURE_2_HADARI",
 						"3_M16_LECTURE_3_HADARI",
-						"4_M16_LECTURE_4_HADARI"
+						"4_M16_LECTURE_4_HADARI",
+						"5_M16_LECTURE_5_HADARI"
 					]
 				},
 				{
@@ -721,7 +723,8 @@
 						"2_M18_LECTURE_2_HADARI",
 						"3_M18_LECTURE_3_HADARI",
 						"4_M18_LECTURE_4_HADARI",
-						"5_M18_LECTURE_5_HADARI"
+						"5_M18_LECTURE_5_HADARI",
+						"6_M18_LECTURE_6_HADARI"
 					]
 				},
 				{
@@ -731,7 +734,8 @@
 						"1_M19_LECTURE_1_HADARI",
 						"2_M19_LECTURE_2_HADARI",
 						"3_M19_LECTURE_3_HADARI",
-						"4_M19_LECTURE_4_HADARI"
+						"4_M19_LECTURE_4_HADARI",
+						"5_M19_LECTURE_5_HADARI"
 					],
 					"Pr.KRIMI":[
 						"1_M19_COMPLETE_COURSE_KRIMI"
@@ -743,7 +747,8 @@
 					"Pr.JEBBAR":[
 						"1_M20_LECTURE_1_JABBAR",
 						"2_M20_LECTURE_2_JABBAR",
-						"3_M20_LECTURE_3_JABBAR"
+						"3_M20_LECTURE_3_JABBAR",
+						"4_M20_LECTURE_4_JABBAR"
 					]
 				}
 			]
@@ -774,5 +779,151 @@
 				}
 			]
 		}
+	],
+	"logs": [
+		{
+			"id": 7,
+			"op": "+",
+			"details": "Lecture 06 - M18",
+			"date": "2021-11-06"
+		},
+		{
+			"id": 6,
+			"op": "+",
+			"details": "Lecture 05 - M15",
+			"date": "2021-11-06"
+		},
+		{
+			"id": 5,
+			"op": "+",
+			"details": "Lecture 05 - M16",
+			"date": "2021-11-06"
+		},
+		{
+			"id": 4,
+			"op": "+",
+			"details": "Lecture 05 - M19",
+			"date": "2021-11-06"
+		},
+		{
+			"id": 3,
+			"op": "#",
+			"details": "Lecture 04 - M19",
+			"date": "2021-11-06"
+		},
+		{
+			"id": 2,
+			"op": "#",
+			"details": "Lecture 03 - M19",
+			"date": "2021-11-06"
+		},
+		{
+			"id": 1,
+			"op": "+",
+			"details": "Lecture 04 - M20",
+			"date": "2021-11-02"
+		}
+	],
+	"quotes":[
+		{
+			"quote":"Good, better, best. Never let it rest. 'Til your good is better and your better is best.",
+			"by":"St. Jerome"
+		},
+		{
+			"quote":"Start where you are. Use what you have. Do what you can.",
+			"by": "Arthur Ashe"
+		},
+		{
+			"quote":"When something is important enough, you do it even if the odds are not in your favor.",
+			"by": "Elon Musk"
+		},
+		{
+			"quote":"I don't believe you have to be better than everybody else. I believe you have to be better than you ever thought you could be.",
+			"by": "Ken Venturi"
+		},
+		{
+			"quote":"Failure will never overtake me if my determination to succeed is strong enough.",
+			"by": "Og Mandino"
+		},
+		{
+			"quote":"If you want to succeed you should strike out on new paths, rather than travel the worn paths of accepted success.",
+			"by": "John D. Rockefeller"
+		},
+		{
+			"quote":"Either I will find a way, or I will make one.",
+			"by": "Philip Sidney"
+		},
+		{
+			"quote":"The first step toward success is taken when you refuse to be a captive of the environment in which you first find yourself.",
+			"by": "Mark Caine"
+		},
+		{
+			"quote":"Decide what you want, decide what you are willing to exchange for it. Establish your priorities and go to work.",
+			"by": "H. L. Hunt"
+		},
+		{
+			"quote":"Where there is a will, there is a way. If there is a chance in a million that you can do something, anything, to keep what you want from ending, do it. Pry the door open or, if need be, wedge your foot in that door and keep it open.",
+			"by": "Pauline Kael"
+		},
+		{
+			"quote":"The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart.",
+			"by": "Helen Keller"
+		},
+		{
+			"quote":"Perfection is not attainable, but if we chase perfection we can catch excellence.",
+			"by": "Vince Lombardi"
+		},
+		{
+			"quote":"Put your heart, mind, and soul into even your smallest acts. This is the secret of success.",
+			"by": "Swami Sivananda"
+		},
+		{
+			"quote":"Your present circumstances don't determine where you can go; they merely determine where you start.",
+			"by": "Nido Qubein"
+		},
+		{
+			"quote":"I am not afraid of tomorrow, for I have seen yesterday and I love today!",
+			"by": "William Allen White"
+		},
+		{
+			"quote":"Be brave enough to live life creatively. The creative place where no one else has ever been.",
+			"by": "Alan Alda"
+		},
+		{
+			"quote":"My mission in life is not merely to survive, but to thrive; and to do so with some passion, some compassion, some humor, and some style.",
+			"by": "Maya Angelou"
+		},
+		{
+			"quote":"Ability is what you're capable of doing. Motivation determines what you do. Attitude determines how well you do it.",
+			"by": "Lou Holtz"
+		},
+		{
+			"quote":"Time plays a role in almost every decision. And some decisions define your attitude about time.",
+			"by": "John Cale"
+		},
+		{
+			"quote":"A positive attitude causes a chain reaction of positive thoughts, events and outcomes. It is a catalyst and it sparks extraordinary results.",
+			"by": " Wade Boggs"
+		},
+		{
+			"quote":"To succeed, you need to find something to hold on to, something to motivate you, something to inspire you.",
+			"by": "Tony Dorsett"
+		},
+		{
+			"quote":"When it is obvious that the goals cannot be reached, don't adjust the goals, adjust the action steps.",
+			"by": "Confucius"
+		},
+		{
+			"quote":"Real knowledge is to know the extent of one's ignorance.",
+			"by": "Confucius"
+		},
+		{
+			"quote":"It is the mark of an educated mind to be able to entertain a thought without accepting it.",
+			"by": "Aristotle"
+		},
+		{
+			"quote":"Learning is not attained by chance, it must be sought for with ardor and diligence.",
+			"by": "Abigail Adams"
+		}	
 	]
 }

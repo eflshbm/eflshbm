@@ -17,20 +17,38 @@
 	<link rel="stylesheet" href="style/style.css">
 	<title>eFLSHBM</title>
 </head>
+<!-- gtg -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K4P4VCMSGW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K4P4VCMSGW');
+</script>
+
 <body>
-	<div id="infotrgr">v:0.1.1 / <a href="#info" class="red">info</a> </div>
 	<header>
 		<h2>Faculty of Arts and Humanities</h2>
 		<h1>sultan moulay slimane university</h1>
 		<h2>department of english studies</h2>
 		<!-- <h3>beni mellal morocco</h3> -->
 	</header>
-
+	<menu>
+		<ul>
+			<li data-name="semesters"><a href="#">home</a></li>
+			<li data-name="about"><a href="#about">About </a></li>
+			<li data-name="news"><a href="#news">news</a></li>
+			<li data-name="logs"><a href="#logs">logs</a></li>
+		</ul>
+	</menu>
 	<section id="semesters" class='semsclss sec'>
-		<h1>Semesters</h1>
+		<div id="quote" class="heading"></div>
+		<h1 class="heading">Semesters</h1>
 	</section>
-	<section id="info" class='sec'>
-		<h1>Information <a href="#" class="close">X</a> </h1>
+	<section id="about" class='sec'>
+		<h1 class="heading">About <a href="#" class="close">X</a></h1>
 		<ul>
 			<li>Features</li>
 			<li>Latest lectures. (Modules with + sign)</li>
@@ -50,15 +68,30 @@
 			<li>R.S (G4)</li>
 		</ul>
 		<ul>
+			<li>Contact</li>
+			<li><a href="mailto:eflshbm@gmail.com">eflshbm@gmail.com</a></li>
+		</ul>
+		<ul>
+			<li>version</li>
+			<li>0.2</li>
+		</ul>
+		<ul>
 			<li>Date</li>
 			<li>31/10/2021</li>
 		</ul>
 	</section>
+	<section id="news" class='sec'>
+		<h1 class="heading">news <a href="#" class="close">X</a></h1>
+		<h2>Coming Soon...</h2>
+	</section>
+	<section id="logs" class='sec'>
+		<h1 class="heading">logs <a href="#" class="close">X</a></h1>
+	</section>
 	<section id="error" class="sec">
 		<div id="errmsg">
-			<h1>404</h1>
+			<h1 class="heading">404</h1>
 			<h2>Are you lost ?</h2>
-			<a href="#semesters">&lt; Go back</a>
+			<a href="#">&lt; Go back</a>
 		</div>
 	</section>
 	<div id="autogen"></div>

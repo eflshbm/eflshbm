@@ -1,4 +1,5 @@
 /*Author: Rashid Saad*/
+/*contact: eflshbm@gmail.com*/
 /*31/10/2021*/
 /*Beni Melll Morocco*/
 
@@ -106,7 +107,7 @@ body{
   margin: 10px auto;
   padding: 0 10px;
 }
-header, .semsclss h1, .engclasses ul > li, .engclasses h1, .semsclss ul li, #info h1, #info ul li{
+header, .engclasses ul > li, .semsclss ul li, #about ul li, menu, .heading{
   background: var(--theme-bg);
   border: 1px solid var(--theme-border);
   border-radius: 3px;
@@ -122,9 +123,25 @@ header h1{
 header h2{
   text-transform: capitalize;
 }
+menu{
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 20px;
+}
+menu ul li{
+  display: inline;
+}
+menu ul li a{
+  text-transform: lowercase;
+  font-variant: small-caps;
+  font-size: 1.1em;
+  padding: 0 10px;
+  letter-spacing: 0.1em;
+}
 a.savepdf{
   display: block;
   text-align: center;
+  font-variant: small-caps;
 }
 footer{
   text-align: center;
@@ -189,7 +206,7 @@ a.close {
 .render{
   display: block !important;
 }
-.semsclss h1, .engclasses ul > li, .engclasses h1, #info h1{
+.engclasses ul > li, .heading{
   margin-bottom: 10px;
   padding: 20px;
   text-transform: capitalize;
@@ -240,30 +257,85 @@ li.links ol li a{
   background: var(--theme-bg);
   border-radius: 3px;
 }
-/*info*/
-
-#infotrgr{
+/*quote*/
+div#quote {
   margin-bottom: 10px;
-  font-size: 12px;
-  text-align: center;
+  color: #424242;
+  position: relative;
 }
-#info ul{
+div#quote p{
+  font-size: 1.2em;
+  text-align: center;
+  text-transform: none;
+}
+/*div#quote p:before{
+  content: '“';
+  left: 5px;
+  top: 0;
+}*/
+/*div#quote p:after{
+  content: '”';
+  right: 5px;
+  top: 0;
+}*/
+/*div#quote p:before, div#quote p:after{
+  font-family: serif;
+  font-size: 4em;
+  position: absolute;
+  opacity: .2;
+}*/
+div#quote span{
+  display: block;
+  text-align: center;
+  opacity: .5;
+  text-transform: lowercase;
+  font-variant: small-caps;
+}
+/*about*/
+#about ul{
   text-align: center;
   margin-bottom: 10px;
 }
-#info ul li {
+#about ul li {
     padding: 10px 0;
     border-bottom: none;
     border-radius: 0;
 }
-#info ul li:first-of-type{
+#about ul li:first-of-type{
   background: var(--theme-actv);
   font-weight: bold;
   margin-top: 10px;
   border-radius: 3px 3px 0 0;
 }
-#info ul li:last-of-type{
+#about ul li:last-of-type{
   border-bottom: 1px solid var(--theme-border);
+}
+/*logs*/
+#logs li {
+  padding: 10px;
+  border: 1px solid var(--theme-border);
+  border-top: none;
+  background: var(--theme-bg);
+}
+#logs li:first-of-type{
+  border-top: 1px solid var(--theme-border);
+  font-weight: bold;
+  border-radius: 3px 3px 0 0;
+  background: var(--theme-actv);
+}
+#logs li h3{
+  text-transform: uppercase;
+}
+#logs li h3 span{
+  font-weight: bold;
+}
+#logs li p{
+  font-variant: small-caps;
+  font-size: 0.8em;
+}
+#morelogs{
+  cursor: pointer;
+  font-weight: bold;
 }
 /*misc class*/
 .bgflip {
@@ -275,6 +347,9 @@ li.links ol li a{
 .red{
   color: red;
   font-variant: small-caps;
+  font-weight: bold;
+}
+.active{
   font-weight: bold;
 }
 /*media q*/
@@ -292,9 +367,6 @@ li.links ol li a{
   }
 }
 @media only screen and (max-width: 520px){
-  /*header, .semsclss ul li, .semsclss h1,.engclasses h1, .engclasses ul > li{
-    margin-bottom: 5px;
-  }*/
   header h1 {
     font-size: 1.1em;
   }
@@ -305,9 +377,18 @@ li.links ol li a{
     /*width: 49.4%;*/
     width: 100%;
   }
-  .semsclss h1,.engclasses h1, #info h1{
+  div#quote p{
+    font-size: 1em;
+  }
+  div#quote span{
+    font-size: .9em;
+  }
+  .heading{
     padding: 15px 10px;
     font-size: 1.2em;
+  }
+  menu{
+    padding: 15px;
   }
   .semsclss ul li a {
     padding: 20px 0;
@@ -329,7 +410,7 @@ li.links ol li a{
   .module h2{
     font-size: 1.2em;
   }
-  .module h3{
+  .module h3, #logs h3{
     font-size: 1em;
   }
   .module h4{
@@ -353,7 +434,7 @@ li.links ol li a{
   }
 }
 @media only screen and (max-width: 380px){
-  header, .semsclss h1, .engclasses ul > li, .engclasses h1, #info h1, .semsclss ul li, #info ul li, #info ul li:first-of-type{
+  header, .engclasses ul > li, .heading, .semsclss ul li, #about ul li, #about ul li:first-of-type{
     border-radius: 0;
     border-left: none;
     border-right: none;
@@ -364,10 +445,13 @@ li.links ol li a{
   header {
     padding: 15px;
   }
+  menu{
+    padding: 10px;
+  }
   header h1,header h2 {
     font-size: 0.9em;
   }
-  .semsclss h1, .engclasses h1, #info h1 {
+  .heading {
     padding: 10px;
     font-size: 1.1em;
   }
@@ -384,6 +468,11 @@ li.links ol li a{
   }
 }
 @media only screen and (max-width: 340px){
+  menu ul li a{
+    font-size: 1em;
+    padding: 6px;
+    letter-spacing: normal;
+  }
   .module h2{
     font-size: 1em;
   }
@@ -409,7 +498,7 @@ li.links ol li a{
   a.close{
     display: none;
   }
-  .semsclss h1, .engclasses ul > li, .engclasses h1, #info h1{
+  .engclasses ul > li, .heading{
     padding: 10px 20px;
   }
   a.savepdf{
