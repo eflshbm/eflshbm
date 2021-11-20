@@ -694,7 +694,8 @@
 						"1_M15_LECTURE_1&2_HANDOUR",
 						"2_M15_LECTURE_3&4_HANDOUR",
 						"3_M15_LECTURE_5_HANDOUR",
-						"4_M15_LECTURE_6_HANDOUR"
+						"4_M15_LECTURE_6_HANDOUR",
+						"5_M15_LECTURE_7_HANDOUR"
 					]
 				},
 				{
@@ -707,15 +708,23 @@
 						"4_M16_LECTURE_4_HADARI",
 						"5_M16_LECTURE_5_HADARI",
 						"6_M16_LECTURE_6_HADARI"
+					],
+					"Pr.BYCHOU": [
+						"1_M16_COMPLETE_COURSE_BAYCHOU"
 					]
 				},
 				{
 					"id": "17",
 					"name": "Grammar 3",
 					"Pr.OUATAT":[
+						"0_M17_COMPLETE_COURSE_OUATAT",
 						"1_M17_LECTURE_1_OUATAT",
 						"2_M17_LECTURE_2&3_OUATAT",
 						"3_M17_LECTURE_4_OUATAT"
+
+					],
+					"Pr.ZAID": [
+						"1_M17_COMPLETE_COURSE_ZAID"
 					]
 				},
 				{
@@ -728,7 +737,11 @@
 						"4_M18_LECTURE_4_HADARI",
 						"5_M18_LECTURE_5_HADARI",
 						"6_M18_LECTURE_6_HADARI",
-						"7_M18_LECTURE_7_HADARI"
+						"7_M18_LECTURE_7_HADARI",
+						"8_M18_LECTURE_8_HADARI"
+					],
+					"Pr.ZANZOUN": [
+						"1_M18_COMPLETE_COURSE_ZANZOUN"
 					]
 				},
 				{
@@ -787,6 +800,54 @@
 		}
 	],
 	"logs": [
+		{
+			"id": 22,
+			"op": "+",
+			"details": "complete Course - M18 - S3-G2",
+			"date": "2021-11-20"
+		},
+		{
+			"id": 21,
+			"op": "+",
+			"details": "complete Course - M16 - S3-G1&G2",
+			"date": "2021-11-20"
+		},
+		{
+			"id": 20,
+			"op": "+",
+			"details": "complete Course - M17 - S3-G1&G2",
+			"date": "2021-11-20"
+		},
+		{
+			"id": 19,
+			"op": "+",
+			"details": "complete Course - M17 - S3-G3&G4",
+			"date": "2021-11-20"
+		},
+		{
+			"id": 18,
+			"op": "+",
+			"details": "Lecture 08 - M18 - S3-G3&G4",
+			"date": "2021-11-20"
+		},
+		{
+			"id": 17,
+			"op": "+",
+			"details": "Lecture 08 - M18 - S3-G3&G4",
+			"date": "2021-11-20"
+		},
+		{
+			"id": 16,
+			"op": "+",
+			"details": "Lecture 07 - M15 - S3-G3&G4",
+			"date": "2021-11-20"
+		},
+		{
+			"id": 15,
+			"op": "#",
+			"details": "complete Course - M19 - S3-G3",
+			"date": "2021-11-20"
+		},
 		{
 			"id": 14,
 			"op": "+",
