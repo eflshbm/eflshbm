@@ -696,6 +696,10 @@
 						"3_M15_LECTURE_5_HANDOUR",
 						"4_M15_LECTURE_6_HANDOUR",
 						"5_M15_LECTURE_7_HANDOUR"
+					],
+					"Pr.AGLIZ":[
+						"4_M15_LECTURE_4_AGLIZ",
+						"5_M15_LECTURE_5_AGLIZ"
 					]
 				},
 				{
@@ -710,7 +714,7 @@
 						"6_M16_LECTURE_6_HADARI"
 					],
 					"Pr.BYCHOU": [
-						"1_M16_COMPLETE_COURSE_BAYCHOU"
+						"1_M16_COMPLETE_COURSE_BYCHOU"
 					]
 				},
 				{
@@ -742,6 +746,10 @@
 					],
 					"Pr.ZANZOUN": [
 						"1_M18_COMPLETE_COURSE_ZANZOUN"
+					],
+					"Pr.KOUBALI":[
+						"1_M18_LECTURE_1_KOUBALI",
+						"2_M18_COMPLETE_COURSE_KOUBALI"
 					]
 				},
 				{
@@ -757,7 +765,17 @@
 					],
 					"Pr.KRIMI":[
 						"1_M19_COMPLETE_COURSE_KRIMI"
+					],
+					"Pr.AGLIZ":[
+						"1_M19_LECTURE_1_AGLIZ",
+						"2_M19_LECTURE_2_AGLIZ",
+						"3_M19_LECTURE_3_AGLIZ",
+						"4_M19_LECTURE_4_AGLIZ",
+						"5_M19_LECTURE_5_AGLIZ",
+						"6_M19_LECTURE_6_AGLIZ",
+						"7_M19_LECTURE_7_AGLIZ"
 					]
+
 				},
 				{
 					"id": "20",
@@ -801,133 +819,126 @@
 	],
 	"logs": [
 		{
-			"id": 22,
+			"op": "+",
+			"details": "Lecture 01 TO 07 - M19 - S3-G1&G2",
+			"date": "2021-11-28"
+		},
+		{
+			"op": "+",
+			"details": "complete Course - M18 - S3-G1",
+			"date": "2021-11-28"
+		},
+		{
+			"op": "+",
+			"details": "Lecture 04&05 - M15 - S3-G1&G2",
+			"date": "2021-11-28"
+		},
+		{
 			"op": "+",
 			"details": "complete Course - M18 - S3-G2",
 			"date": "2021-11-20"
 		},
 		{
-			"id": 21,
 			"op": "+",
 			"details": "complete Course - M16 - S3-G1&G2",
 			"date": "2021-11-20"
 		},
 		{
-			"id": 20,
 			"op": "+",
 			"details": "complete Course - M17 - S3-G1&G2",
 			"date": "2021-11-20"
 		},
 		{
-			"id": 19,
 			"op": "+",
 			"details": "complete Course - M17 - S3-G3&G4",
 			"date": "2021-11-20"
 		},
 		{
-			"id": 18,
 			"op": "+",
 			"details": "Lecture 08 - M18 - S3-G3&G4",
 			"date": "2021-11-20"
 		},
 		{
-			"id": 17,
 			"op": "+",
 			"details": "Lecture 08 - M18 - S3-G3&G4",
 			"date": "2021-11-20"
 		},
 		{
-			"id": 16,
 			"op": "+",
 			"details": "Lecture 07 - M15 - S3-G3&G4",
 			"date": "2021-11-20"
 		},
 		{
-			"id": 15,
 			"op": "#",
 			"details": "complete Course - M19 - S3-G3",
 			"date": "2021-11-20"
 		},
 		{
-			"id": 14,
 			"op": "+",
 			"details": "Lecture 07 - M18 - S3-G3&G4",
 			"date": "2021-11-13"
 		},
 		{
-			"id": 13,
 			"op": "+",
 			"details": "Lecture 06 - M15 - S3-G3&G4",
 			"date": "2021-11-13"
 		},
 		{
-			"id": 12,
 			"op": "+",
 			"details": "Lecture 06 - M16 - S3-G3&G4",
 			"date": "2021-11-13"
 		},
 		{
-			"id": 11,
 			"op": "+",
 			"details": "Lecture 06 - M19 - S3-G4",
 			"date": "2021-11-13"
 		},
 		{
-			"id": 10,
 			"op": "+",
 			"details": "Lecture 04 - M117 - S3-G3&G4",
 			"date": "2021-11-13"
 		},
 		{
-			"id": 9,
 			"op": "+",
 			"details": "Lecture 05 - M20 - S3-G3&G4",
 			"date": "2021-11-13"
 		},
 		{
-			"id": 8,
 			"op": "#",
 			"details": "Lecture 1 - M19 - S3-G4",
 			"date": "2021-11-13"
 		},
 		{
-			"id": 7,
 			"op": "+",
 			"details": "Lecture 06 - M18 - S3-G3&G4",
 			"date": "2021-11-06"
 		},
 		{
-			"id": 6,
 			"op": "+",
 			"details": "Lecture 05 - M15 - S3-G3&G4",
 			"date": "2021-11-06"
 		},
 		{
-			"id": 5,
 			"op": "+",
 			"details": "Lecture 05 - M16 - S3-G3&G4",
 			"date": "2021-11-06"
 		},
 		{
-			"id": 4,
 			"op": "+",
 			"details": "Lecture 05 - M19 - S3-G4",
 			"date": "2021-11-06"
 		},
 		{
-			"id": 3,
 			"op": "#",
 			"details": "Lecture 04 - M19 - S3-G4",
 			"date": "2021-11-06"
 		},
 		{
-			"id": 2,
 			"op": "#",
 			"details": "Lecture 03 - M19 - S3-G4",
 			"date": "2021-11-06"
 		},
 		{
-			"id": 1,
 			"op": "+",
 			"details": "Lecture 04 - M20 - S3-G3&G4",
 			"date": "2021-11-02"
@@ -1033,6 +1044,33 @@
 		{
 			"quote":"Learning is not attained by chance, it must be sought for with ardor and diligence.",
 			"by": "Abigail Adams"
-		}	
+		}
+	],
+	"stories": [
+		{
+			"title":"Young Goodman Brown",
+			"author":"Nathaniel Hawthorne",
+			"published":"1835"
+		},
+		{
+			"title":"her first ball",
+			"author":"Katherine Mansfield",
+			"published":"1921"
+		},
+		{
+			"title":"clay",
+			"author":"James Joyce",
+			"published":"1914"
+		},
+		{
+			"title":"The Black Cat",
+			"author":"Edgar Allan Poe",
+			"published":"1843"
+		},
+		{
+			"title":"The Duchess and the Jeweller",
+			"author":"irginia Woolf",
+			"published":"1938"
+		}
 	]
 }

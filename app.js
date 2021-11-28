@@ -8,7 +8,12 @@ const
 	smstrSec = document.getElementById('semesters'),
 	autogen	 = document.getElementById("autogen"),
 	logsSec	 = document.getElementById("logs"),
-	quoteDiv = document.getElementById("quote");
+	quoteDiv = document.getElementById("quote"),
+	storyDiv = document.getElementById("stories"),
+	readrDiv = document.getElementById("reader"),
+	readrCLR = document.getElementById("readerclear"),
+	rndStory = document.getElementById("rndstory"),
+	bakToTop = document.getElementById("top");
 
 
 fetchtData = (url) => {
@@ -38,7 +43,7 @@ printData = (data) =>{
 		section += `<li><a href="#${smstrSecID}">${semesterHD}</a></li>`;
 		let semester = `<section id="${smstrSecID}" class='semsclss sec'><h1 class="heading">${semesterHD} classes<a href="#" class="close">X</a></h1><ul>`;
 		ENGsemester.classes.map(ENGclass => {
-			const className = ENGclass.className;
+			const className = ENGclass.className.toLowerCase();
 
 			// sort modules
 			const modules = ENGclass.modules.sort((a,b)=>{return  parseInt(a.order) - parseInt(b.order)});
@@ -122,6 +127,49 @@ printData = (data) =>{
 
 	quoteDiv.insertAdjacentHTML('beforeend', quote);
 
+	// stories
+	let stories = "<ul>";
+
+	data.stories.map(story=>{
+		stories += storyBuilder("li", story);
+	});
+	
+	stories += "</ul>";
+	storyDiv.insertAdjacentHTML('beforeend', stories);
+
+	// random story fp
+	const
+		rndNumX = Math.floor(Math.random() * data.stories.length),
+		dataStory = data.stories[rndNumX],
+		story = storyBuilder("div", dataStory);
+
+	rndStory.insertAdjacentHTML('beforeend', story);
+
+	// reader trgr
+	const reads = document.querySelectorAll('.read');
+	reads.forEach(read=>{
+		read.onclick = function(e){
+			// clear reader
+			// While there is a clear on X btn, peps could click on menu itms...
+			readrDiv.childElementCount > 1 ? readrDiv.lastChild.remove() : false;
+			fetch(`stories/${read.dataset.title}.txt`).then(response => {
+				return response.text();
+			})
+			.then(
+				text => {
+					readrDiv.insertAdjacentHTML('beforeend', text);
+				})
+			.catch(function(err) {
+			  	console.log("Error:"+err);
+			});
+		}
+	});
+
+	// clear reader div after exit X btn
+	readrCLR.onclick = function(){
+		readrDiv.childElementCount > 1 ? readrDiv.lastChild.remove() : false;
+	}
+
 	// A_ module li click show cours
 
 	// 1a_ select links li > add class 'havelinks' to module, add + sign
@@ -152,8 +200,12 @@ printData = (data) =>{
 	});
 }
 
+// top
+bakToTop.onclick = () => window.scrollTo({top: 0, behavior: 'smooth'});
+window.onscroll  = () => scroll(bakToTop, 300);
+
 render = (url) => {
-	let secs 	= ['','semesters', 'about', 'news', 'logs'].concat(sets),
+	let secs 	= ['','semesters', 'about', 'stories', 'logs', 'reader'].concat(sets),
 	sec 		= url.slice(1),
 	index 		= secs.indexOf(sec);
 
@@ -170,6 +222,7 @@ render = (url) => {
 	// add active
 	const item = document.querySelector(`menu ul li[data-name=${sec}]`);
 	item ? item.classList.add("active") : false;
+
 };
 
 // fix + call @ printData
@@ -180,6 +233,19 @@ function init(){
 
 	const url = "data.json";
 	fetchtData(url);
+}
+
+// f(x)s 
+
+storyBuilder = (mainElem, story) => {
+	const mTitle = story.title.replaceAll(" ", "_").toLowerCase();
+	str = `<${mainElem} class="module"><h2>${story.title}</h2><h3><i>${story.author}</i></h3>
+							<h4>Published In: ${story.published}</h4>
+							<a href="#reader" data-title="${mTitle}" class="read">read</a></${mainElem}>`;
+	return str;
+}
+scroll = (target, ot) => {
+	pageYOffset > ot ? target.classList.add('render') : target.classList.remove('render');
 }
 
 function timeSince(date) {

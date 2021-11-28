@@ -32,6 +32,8 @@ html {
 }
 a{
   text-decoration: none;
+  color: var(--theme-font-color);
+  text-shadow: 0 2px var(--theme-border);
 }
 a:focus {
   outline: thin dotted #333;
@@ -76,40 +78,45 @@ input::placeholder{
 span.index.markthis{
   background: #cddc39;
 }
+/* rev_Default < end >*/
+
+:root{
+  --theme-font-color: #fff;
+  --theme-actv: #1c0f58;
+  --theme-bg: #4527a0;
+  --theme-border: #1f0c72;
+  --theme-mbg: #2b1785;
+  --theme-hclr: #ffc107;
+  --theme-ldrk: #100934;
+}
 
 /* sb */
 ::-webkit-scrollbar {
   width: 7px;
 }
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: var(--theme-ldrk); 
 }
 ::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: var(--theme-bg); 
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: var(--theme-border); 
 }
-/* rev_Default < end >*/
-:root {
-  --theme-font-color: #000;
-  --theme-actv:#eeeeee;
-  --theme-bg: #fafafa;
-  --theme-border: #e0e0e0;
-}
-a{
-  color: var(--theme-font-color);
-}
+
 /*rev default /end*/
 
 body{
+  color: var(--theme-font-color);
+  background: var(--theme-mbg);
   max-width: 800px;
   margin: 10px auto;
   padding: 0 10px;
 }
 header, .engclasses ul > li, .semsclss ul li, #about ul li, menu, .heading{
   background: var(--theme-bg);
-  border: 1px solid var(--theme-border);
+  /*border: 1px solid var(--theme-border);*/
+  box-shadow: 0 0 3px var(--theme-border);
   border-radius: 3px;
 }
 header {
@@ -212,8 +219,9 @@ a.close {
   text-transform: capitalize;
   position: relative;
 }
-ul > li.module{
-  cursor: pointer;
+.engclasses ul li h2, #rndstory h2{
+  color: var(--theme-hclr);
+  font-weight: bold;
 }
 .engclasses ul li span, .engclasses ul li h5{
   position: absolute;
@@ -222,7 +230,6 @@ ul > li.module{
 .engclasses ul li span{
   bottom: 30px;
   font-size: 2em;
-  opacity: 0.5;
 }
 .engclasses ul li h5 {
   bottom: 10px;  
@@ -260,7 +267,6 @@ li.links ol li a{
 /*quote*/
 div#quote {
   margin-bottom: 10px;
-  color: #424242;
   position: relative;
 }
 div#quote p{
@@ -291,6 +297,54 @@ div#quote span{
   text-transform: lowercase;
   font-variant: small-caps;
 }
+/*stories*/
+section#stories ul li p {
+  text-align: justify;
+  margin-top: 20px;
+  text-transform: none;
+}
+a.read {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  letter-spacing: 0.1em;
+  padding: 5px 10px;
+  background: var(--theme-hclr);
+  color: #000;
+  border-radius: 3px;
+  box-shadow: 0 0 3px var(--theme-border);
+  text-shadow: none;
+}
+/*story reader*/
+#story{
+  text-align: justify;
+  padding: 20px 0;
+  border-radius: 3px;
+  border: 1px solid var(--theme-ldrk);
+  background: var(--theme-ldrk);
+}
+#story h1, #story h3{
+  text-align: center;
+}
+#story h1{
+  font-size: 3em;
+  font-weight: bold;
+  color: var(--theme-hclr);
+}
+#story h3{
+  padding-bottom: 20px;
+  font-style: italic;
+}
+#story p{
+  padding: 20px;
+  font-size: 1.2em;
+  line-height: 1.3em;
+}
+#story .poem{
+  text-align: center;
+}
 /*about*/
 #about ul{
   text-align: center;
@@ -309,6 +363,10 @@ div#quote span{
 }
 #about ul li:last-of-type{
   border-bottom: 1px solid var(--theme-border);
+}
+#about ul li a{
+  color: var(--theme-hclr);
+  font-weight: bold;
 }
 /*logs*/
 #logs li {
@@ -337,20 +395,39 @@ div#quote span{
   cursor: pointer;
   font-weight: bold;
 }
+
 /*misc class*/
+div#top {
+  padding: 10px;
+  background: #ffffff;
+  opacity: .4;
+  color: #000;
+  font-weight: bold;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 3px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 3;
+  display: none;
+  box-shadow: 0 0 3px var(--theme-border);
+}
 .bgflip {
   background: var(--theme-actv) !important;
   margin-bottom: 0px !important;
-  border-bottom: 1px solid #bdbdbd !important;
   border-radius: 3px 3px 0 0 !important;
 }
 .red{
-  color: red;
+  color: var(--theme-hclr);
   font-variant: small-caps;
   font-weight: bold;
 }
-.active{
+.active a{
   font-weight: bold;
+}
+.havelinks{
+  cursor: pointer;
 }
 /*media q*/
 @media only screen and (max-width: 720px){
@@ -372,6 +449,17 @@ div#quote span{
   }
   header h2 {
     font-size: 1em;
+  }
+  #story h1 {
+    font-size: 2.2em;
+  }
+  a.read{
+    padding: 2px 5px;
+    letter-spacing: 0em;
+  }
+  div#top {
+    padding: 5px;
+    font-size: 0.9em;
   }
   .semsclss ul li{
     /*width: 49.4%;*/
@@ -434,14 +522,6 @@ div#quote span{
   }
 }
 @media only screen and (max-width: 380px){
-  header, .engclasses ul > li, .heading, .semsclss ul li, #about ul li, #about ul li:first-of-type{
-    border-radius: 0;
-    border-left: none;
-    border-right: none;
-  }
-  body{
-    padding: 0;
-  }
   header {
     padding: 15px;
   }
@@ -449,7 +529,10 @@ div#quote span{
     padding: 10px;
   }
   header h1,header h2 {
-    font-size: 0.9em;
+    font-size: 1em;
+  }
+  #story h1 {
+    font-size: 1.6em;
   }
   .heading {
     padding: 10px;
@@ -513,20 +596,21 @@ div#quote span{
  }
 }
 /*hovers*/
-.semsclss ul li, a.close, li.links ol li a{
+.semsclss ul li, a.close, li.links ol li a, a.read, #top{
   transition: .2s ease-in;
 }
 /*target only bg*/
 .engclasses ul > li{
   transition: background .2s ease-in;
 }
-.semsclss ul li:hover, a.close:hover, .engclasses ul > li:not(li.links):hover, li.links ol li:hover a{
+.semsclss ul li:hover, a.close:hover, li.havelinks:hover, li.links ol li:hover a{
   background: var(--theme-actv);
 }
-li.module:hover i{
-  font-weight: bold;
+a.read:hover, #top:hover{
+  background: var(--theme-actv);
+  color: var(--theme-font-color);
+  opacity: 1;
 }
-
 /*hide sems*/
 #semesters ul li:nth-child(2n){
   display: none;
