@@ -129,7 +129,6 @@ printData = (data) =>{
 
 	// stories
 	let stories = "<ul>";
-
 	data.stories.map(story=>{
 		stories += storyBuilder("li", story);
 	});
@@ -144,31 +143,6 @@ printData = (data) =>{
 		story = storyBuilder("div", dataStory);
 
 	rndStory.insertAdjacentHTML('beforeend', story);
-
-	// reader trgr
-	const reads = document.querySelectorAll('.read');
-	reads.forEach(read=>{
-		read.onclick = function(e){
-			// clear reader
-			// While there is a clear on X btn, peps could click on menu itms...
-			readrDiv.childElementCount > 1 ? readrDiv.lastChild.remove() : false;
-			fetch(`stories/${read.dataset.title}.txt`).then(response => {
-				return response.text();
-			})
-			.then(
-				text => {
-					readrDiv.insertAdjacentHTML('beforeend', text);
-				})
-			.catch(function(err) {
-			  	console.log("Error:"+err);
-			});
-		}
-	});
-
-	// clear reader div after exit X btn
-	readrCLR.onclick = function(){
-		readrDiv.childElementCount > 1 ? readrDiv.lastChild.remove() : false;
-	}
 
 	// A_ module li click show cours
 
@@ -205,12 +179,22 @@ bakToTop.onclick = () => window.scrollTo({top: 0, behavior: 'smooth'});
 window.onscroll  = () => scroll(bakToTop, 300);
 
 render = (url) => {
-	let secs 	= ['','semesters', 'about', 'stories', 'logs', 'reader'].concat(sets),
-	sec 		= url.slice(1),
-	index 		= secs.indexOf(sec);
+	let sec = url.slice(1);
+
+	// reader hndlr
+	if (sec.includes("reader/")){
+		const story = sec.replace("reader/","");
+		sec = "reader";
+		const tgrElm = document.querySelector(`a[data-title="${story}"]`);
+		// Important !! story trgr in?
+		tgrElm ? storyReader(story) : window.open("#error","_self");
+	}
+
+	const secs 	= ['','semesters', 'about', 'stories', 'logs', 'reader'].concat(sets);
+	index = secs.indexOf(sec);
 
 	index === -1 ? sec = 'error' : sec == '' ? sec = 'semesters' : false;
-	
+
 	const rendredSec = document.querySelector("section.render");
 	rendredSec ? rendredSec.classList.remove("render") : false;
 	document.getElementById(sec).classList.add('render');
@@ -223,7 +207,7 @@ render = (url) => {
 	const item = document.querySelector(`menu ul li[data-name=${sec}]`);
 	item ? item.classList.add("active") : false;
 
-};
+	};
 
 // fix + call @ printData
 renderNow = () => {render(decodeURI(window.location.hash))}
@@ -241,11 +225,32 @@ storyBuilder = (mainElem, story) => {
 	const mTitle = story.title.replaceAll(" ", "_").toLowerCase();
 	str = `<${mainElem} class="module"><h2>${story.title}</h2><h3><i>${story.author}</i></h3>
 							<h4>Published In: ${story.published}</h4>
-							<a href="#reader" data-title="${mTitle}" class="read">read</a></${mainElem}>`;
+							<a href="#reader/${mTitle}" data-title="${mTitle}" class="read">read</a></${mainElem}>`;
 	return str;
 }
+
 scroll = (target, ot) => {
 	pageYOffset > ot ? target.classList.add('render') : target.classList.remove('render');
+}
+
+storyReader = (story) => {
+	// clear reader
+	// While there is a clear on X btn, peps could click on menu itms...
+	readrDiv.childElementCount > 1 ? readrDiv.lastChild.remove() : false;
+	fetch(`stories/${story}.txt`).then(response => {
+		return response.text();
+	})
+	.then(
+		text => {
+			readrDiv.insertAdjacentHTML('beforeend', text);
+		})
+	.catch(function(err) {
+	  	console.log("Error:"+err);
+	});
+	// clear reader div after exit X btn
+	readrCLR.onclick = function(){
+		readrDiv.childElementCount > 1 ? readrDiv.lastChild.remove() : false;
+	}
 }
 
 function timeSince(date) {

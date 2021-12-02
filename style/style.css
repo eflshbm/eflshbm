@@ -115,7 +115,6 @@ body{
 }
 header, .engclasses ul > li, .semsclss ul li, #about ul li, menu, .heading{
   background: var(--theme-bg);
-  /*border: 1px solid var(--theme-border);*/
   box-shadow: 0 0 3px var(--theme-border);
   border-radius: 3px;
 }
@@ -149,6 +148,9 @@ a.savepdf{
   display: block;
   text-align: center;
   font-variant: small-caps;
+  padding: 10px 0;
+  background: var(--theme-bg);
+  border-radius: 3px;
 }
 footer{
   text-align: center;
@@ -596,14 +598,14 @@ div#top {
  }
 }
 /*hovers*/
-.semsclss ul li, a.close, li.links ol li a, a.read, #top{
+.semsclss ul li, a.close, li.links ol li a, a.read, #top, #morelogs, a.savepdf{
   transition: .2s ease-in;
 }
 /*target only bg*/
 .engclasses ul > li{
   transition: background .2s ease-in;
 }
-.semsclss ul li:hover, a.close:hover, li.havelinks:hover, li.links ol li:hover a{
+.semsclss ul li:hover, a.close:hover, li.havelinks:hover, li.links ol li:hover a, #morelogs:hover, a.savepdf:hover{
   background: var(--theme-actv);
 }
 a.read:hover, #top:hover{
