@@ -180,15 +180,21 @@ window.onscroll  = () => scroll(bakToTop, 300);
 
 render = (url) => {
 	let sec = url.slice(1);
-
+	let title = sec.charAt(0).toUpperCase() + sec.slice(1).toLowerCase();
+	title == "" ? title = "eFLSHBM Home" : false;
+	
 	// reader hndlr
 	if (sec.includes("reader/")){
 		const story = sec.replace("reader/","");
-		sec = "reader";
+		sec 	= "reader";
+		title = `Reading: ${story.replaceAll("_", " ").toUpperCase()}`;
 		const tgrElm = document.querySelector(`a[data-title="${story}"]`);
 		// Important !! story trgr in?
 		tgrElm ? storyReader(story) : window.open("#error","_self");
 	}
+
+	// set ttl
+	document.title = title;
 
 	const secs 	= ['','semesters', 'about', 'stories', 'logs', 'reader'].concat(sets);
 	index = secs.indexOf(sec);
