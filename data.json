@@ -695,7 +695,7 @@
 						"2_M15_LECTURE_3&4_HANDOUR",
 						"3_M15_LECTURE_5_HANDOUR",
 						"4_M15_LECTURE_6_HANDOUR",
-						"5_M15_LECTURE_7_HANDOUR"
+						"6_M15_REST_OF_COURSE_HANDOUR"
 					],
 					"Pr.AGLIZ":[
 						"4_M15_LECTURE_4_AGLIZ",
@@ -756,12 +756,7 @@
 					"id": "19",
 					"name": "British and US Culture and Society",
 					"Pr.HADARI":[
-						"1_M19_LECTURE_1_HADARI",
-						"2_M19_LECTURE_2_HADARI",
-						"3_M19_LECTURE_3_HADARI",
-						"4_M19_LECTURE_4_HADARI",
-						"5_M19_LECTURE_5_HADARI",
-						"6_M19_LECTURE_6_HADARI"
+						"1_M19_COMPLETE_COURSE_HADARI"
 					],
 					"Pr.KRIMI":[
 						"1_M19_COMPLETE_COURSE_KRIMI"
@@ -818,6 +813,16 @@
 		}
 	],
 	"logs": [
+		{
+			"op": "+",
+			"details": "complete Course - M19 - S3-G3&G4",
+			"date": "2021-12-12"
+		},
+		{
+			"op": "+",
+			"details": "Rest of the Course - M15 - S3-G3&G4",
+			"date": "2021-12-12"
+		},
 		{
 			"op": "+",
 			"details": "Lecture 01 TO 07 - M19 - S3-G1&G2",
