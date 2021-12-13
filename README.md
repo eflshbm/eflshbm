@@ -17,4 +17,4 @@ Email : [eflshbm@gmail.com](eflshbm@gmail.com)
 3. Add info to json file.
 4. (...)
 
-NB: This is Not the official faculty's Website.
+NB: This is Not the faculty official Website.
