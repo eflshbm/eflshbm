@@ -711,7 +711,8 @@
 						"3_M16_LECTURE_3_HADARI",
 						"4_M16_LECTURE_4_HADARI",
 						"5_M16_LECTURE_5_HADARI",
-						"6_M16_LECTURE_6_HADARI"
+						"6_M16_LECTURE_6_HADARI",
+						"7_M16_LECTURE_7_HADARI"
 					],
 					"Pr.BYCHOU": [
 						"1_M16_COMPLETE_COURSE_BYCHOU"
@@ -721,10 +722,7 @@
 					"id": "17",
 					"name": "Grammar 3",
 					"Pr.OUATAT":[
-						"0_M17_COMPLETE_COURSE_OUATAT",
-						"1_M17_LECTURE_1_OUATAT",
-						"2_M17_LECTURE_2&3_OUATAT",
-						"3_M17_LECTURE_4_OUATAT"
+						"0_M17_COMPLETE_COURSE_OUATAT"
 
 					],
 					"Pr.ZAID": [
@@ -742,7 +740,8 @@
 						"5_M18_LECTURE_5_HADARI",
 						"6_M18_LECTURE_6_HADARI",
 						"7_M18_LECTURE_7_HADARI",
-						"8_M18_LECTURE_8_HADARI"
+						"8_M18_LECTURE_8_HADARI",
+						"9_M18_LECTURE_9_HADARI"
 					],
 					"Pr.ZANZOUN": [
 						"1_M18_COMPLETE_COURSE_ZANZOUN"
@@ -768,7 +767,10 @@
 						"4_M19_LECTURE_4_AGLIZ",
 						"5_M19_LECTURE_5_AGLIZ",
 						"6_M19_LECTURE_6_AGLIZ",
-						"7_M19_LECTURE_7_AGLIZ"
+						"7_M19_LECTURE_7_AGLIZ",
+						"8_M19_LECTURE_8_AGLIZ",
+						"9_M19_LECTURE_9_AGLIZ",
+						"10_M19_LECTURE_10_AGLIZ"
 					]
 
 				},
@@ -781,6 +783,9 @@
 						"3_M20_LECTURE_3_JABBAR",
 						"4_M20_LECTURE_4_JABBAR",
 						"5_M20_LECTURE_5_JABBAR"
+					],
+					"Pr.AGLIZ":[
+						"1_M20_COMPLETE_COURSE_AGLIZ"
 					]
 				}
 			]
@@ -813,6 +818,26 @@
 		}
 	],
 	"logs": [
+		{
+			"op": "+",
+			"details": "complete Course - M20 - S3-G1&G2",
+			"date": "2021-12-18"
+		},
+		{
+			"op": "+",
+			"details": "Lecture 09 TO 10 - M19 - S3-G1&G2",
+			"date": "2021-12-18"
+		},
+		{
+			"op": "+",
+			"details": "Lecture 07 - M16 - S3-G3&G4",
+			"date": "2021-12-18"
+		},
+		{
+			"op": "+",
+			"details": "Lecture 09 - M18 - S3-G3&G4",
+			"date": "2021-12-18"
+		},
 		{
 			"op": "+",
 			"details": "complete Course - M19 - S3-G3&G4",
