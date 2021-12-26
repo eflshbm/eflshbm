@@ -778,11 +778,7 @@
 					"id": "20",
 					"name": "Initiation to Translation",
 					"Pr.JEBBAR":[
-						"1_M20_LECTURE_1_JABBAR",
-						"2_M20_LECTURE_2_JABBAR",
-						"3_M20_LECTURE_3_JABBAR",
-						"4_M20_LECTURE_4_JABBAR",
-						"5_M20_LECTURE_5_JABBAR"
+						"1_M19_COMPLETE_COURSE_JEBBAR"
 					],
 					"Pr.AGLIZ":[
 						"1_M20_COMPLETE_COURSE_AGLIZ"
@@ -820,6 +816,11 @@
 	"logs": [
 		{
 			"op": "+",
+			"details": "complete Course - M20 - S3-G3&G4",
+			"date": "2021-12-22"
+		},
+		{
+			"op": "+",
 			"details": "complete Course - M20 - S3-G1&G2",
 			"date": "2021-12-18"
 		},
@@ -840,7 +841,7 @@
 		},
 		{
 			"op": "+",
-			"details": "complete Course - M19 - S3-G3&G4",
+			"details": "complete Course - M19 - S3-G4",
 			"date": "2021-12-12"
 		},
 		{
