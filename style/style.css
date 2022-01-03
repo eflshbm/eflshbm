@@ -271,7 +271,12 @@ div#quote {
   margin-bottom: 10px;
   position: relative;
 }
-div#quote p{
+#countdown{
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color: var(--theme-hclr);
+}
+div#quote p, #countdown{
   font-size: 1.2em;
   text-align: center;
   text-transform: none;
