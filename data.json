@@ -745,16 +745,7 @@
 						"1_M19_COMPLETE_COURSE_KRIMI"
 					],
 					"Pr.AGLIZ":[
-						"1_M19_LECTURE_1_AGLIZ",
-						"2_M19_LECTURE_2_AGLIZ",
-						"3_M19_LECTURE_3_AGLIZ",
-						"4_M19_LECTURE_4_AGLIZ",
-						"5_M19_LECTURE_5_AGLIZ",
-						"6_M19_LECTURE_6_AGLIZ",
-						"7_M19_LECTURE_7_AGLIZ",
-						"8_M19_LECTURE_8_AGLIZ",
-						"9_M19_LECTURE_9_AGLIZ",
-						"10_M19_LECTURE_10_AGLIZ"
+						"1_M19_COMPLETE_COURSE_AGLIZ"
 					]
 
 				},
@@ -798,6 +789,11 @@
 		}
 	],
 	"logs": [
+		{
+			"op": "+",
+			"details": "M19 - complete Course - S3-G1",
+			"date": "2022-01-04"
+		},
 		{
 			"op": "+",
 			"details": "M17 - Exercises - S3-G3&G4",
