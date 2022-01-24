@@ -739,7 +739,7 @@
 					"name": "British and US Culture and Society",
 					"Pr.HADARI":[
 						"1_M19_UK_COMPLETE_COURSE_HADARI",
-						"2_M19_US_1&2_HADARI"
+						"2_M19_USA_COMPLETE_COURSE_HADARI"
 					],
 					"Pr.KRIMI":[
 						"1_M19_COMPLETE_COURSE_KRIMI"
@@ -789,6 +789,12 @@
 		}
 	],
 	"logs": [
+
+		{
+			"op": "+",
+			"details": "M19 - complete USA Course - S3-G4",
+			"date": "2022-01-19"
+		},
 		{
 			"op": "+",
 			"details": "M19 - complete Course - S3-G1",
@@ -812,11 +818,6 @@
 		{
 			"op": "+",
 			"details": "M16 - complete Course - S3-G3&G4",
-			"date": "2022-01-03"
-		},
-		{
-			"op": "+",
-			"details": "M19 - Lectures 1&2 (US) - S3-G4",
 			"date": "2022-01-03"
 		},
 		{
@@ -846,7 +847,7 @@
 		},
 		{
 			"op": "+",
-			"details": "M19 - complete Course - S3-G4",
+			"details": "M19 - complete UK Course - S3-G4",
 			"date": "2021-12-12"
 		},
 		{
