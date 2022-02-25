@@ -332,13 +332,36 @@ a.read {
   border: 1px solid var(--theme-ldrk);
   background: var(--theme-ldrk);
 }
-#story h1, #story h3{
+#toc{
+  text-align: center;
+  font-size: 1.2em;
+  border: 1px solid var(--theme-hclr);
+  border-radius: 5px;
+  max-width: 480px;
+  margin: 0 auto 20px;
+  padding: 20px 0;
+}
+#toc li{
+  margin: 3px 0;
+}
+#toc li > h4 {
+    border-bottom: 1px solid var(--theme-hclr);
+    border-top: 1px solid var(--theme-hclr);
+    padding: 5px 0;
+    margin: 10px 0;
+}
+#story h1, #story h2, #story h3{
   text-align: center;
 }
-#story h1{
-  font-size: 3em;
+#story h1, #story h2{
   font-weight: bold;
   color: var(--theme-hclr);
+}
+#story h1{
+  font-size: 3em; 
+}
+#story h2{
+  font-size: 2.4em; 
 }
 #story h3{
   padding-bottom: 20px;
@@ -619,6 +642,6 @@ a.read:hover, #top:hover{
   opacity: 1;
 }
 /*hide sems*/
-#semesters ul li:nth-child(2n){
+#semesters ul li:nth-child(2n+1){
   display: none;
 }

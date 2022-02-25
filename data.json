@@ -4,410 +4,16 @@
 			"id": 1,
 			"classes": [
 				{
-					"className": "class 1",
+					"className": "coming soon",
 					"modules": [
 						{
 							"id": "1",
-							"name": "Reading Comprehension and Precis",
-							"professor": "Pr.AGHBALOU",
-							"day": "monday",
-							"time": "11--12:30",
-							"hall": "AMP1",
-							"order": 1
-						},
-						{
-							"id":"2",
-							"name":"Paragraph Writing",
-							"professor":"Pr.BETTACH",
-							"day":"wednesday",
-							"time":"11--12:30",
-							"hall":"SAL02",
-							"order":4
-						},
-						{
-							"id":"3",
-							"name":"Grammar 1",
-							"professor":"Pr.AGBALOU",
-							"day":"monday",
-							"time":"17--18:30",
-							"hall":"SAL30",
-							"order":3
-						},
-						{
-							"id":"4",
-							"name":"Spoken English",
-							"professor":"Pr.OUATAT",
-							"day":"friday",
-							"time":"08--09:30",
-							"hall":"AMP4",
-							"order":5
-						},
-						{
-							"id":"5",
-							"name":"Guided Reading",
-							"professor":"Pr.BETTACH",
-							"day":"monday",
-							"time":"15:30--17",
-							"hall":"SAL27",
-							"order":2
-						},
-						{
-							"id": "6",
-							"name": "Study Skills",
-							"professor": "Pr.OH-HSSATA",
-							"day": "friday",
-							"time": "09:30--11",
-							"hall": "AMP5",
-							"order": 6
-						},
-						{
-							"id": "7",
-							"name": "Language (French)",
-							"professor": "Pr.HACHIMI",
-							"day": "saturday",
-							"time": "08--09:30",
-							"hall": "SAL02",
-							"order": 7
-						}
-					]
-				},
-				{
-					"className": "class 2",
-					"modules": [
-						{
-							"id": "1",
-							"name": "Reading Comprehension and Precis",
-							"professor": "Pr.JEBBAR",
-							"day": "tuesday",
-							"time": "12:30--14",
-							"hall": "AMP1",
-							"order": 4
-						},
-						{
-							"id": "2",
-							"name": "Paragraph Writing",
-							"professor": "Pr.BETTACH",
-							"day": "monday",
-							"time": "9:30--11",
-							"hall": "SAL24",
-							"order": 1
-						},
-						{
-							"id": "3",
-							"name": "Grammar 1",
-							"professor": "Pr.AGBALOU",
-							"day": "monday",
-							"time": "15:30--17",
-							"hall": "SAL30",
-							"order": 3
-						},
-						{
-							"id": "4",
-							"name": "Spoken English",
-							"professor": "Pr.OUATAT",
-							"day": "friday",
-							"time": "09:30--11",
-							"hall": "AMP4",
-							"order": 5
-						},
-						{
-							"id": "5",
-							"name": "Guided Reading",
-							"professor": "Pr.BETTACH",
-							"day": "monday",
-							"time": "11--12:30",
-							"hall": "SAL24",
-							"order": 2
-						},
-						{
-							"id": "6",
-							"name": "Study Skills",
-							"professor": "Pr.OH-HSSATA",
-							"day": "friday",
-							"time": "11--12:30",
-							"hall": "AMP2",
-							"order": 6
-						},
-						{
-							"id": "7",
-							"name": "Language (French)",
-							"professor": "Pr.HACHIMI",
-							"day": "saturday",
-							"time": "09:30--11",
-							"hall": "SAL02",
-							"order": 7
-						}
-					]
-				},
-				{
-					"className": "class 3",
-					"modules": [
-						{
-							"id": "1",
-							"name": "Reading Comprehension and Précis",
-							"professor": "Pr.CHAKOUR",
-							"day": "monday",
-							"time": "15:30--17",
-							"hall": "SAL02",
-							"order": 2
-						},
-						{
-							"id": "2",
-							"name": "Paragraph Writing",
-							"professor": "Pr.BYCHOU",
-							"day": "tuesday",
-							"time": "08--09:30",
-							"hall": "AMP2",
-							"order": 3
-						},
-						{
-							"id": "3",
-							"name": "Grammar 1",
-							"professor": "Pr.BYCHOU",
-							"day": "monday",
-							"time": "14--15:30",
-							"hall": "SAL29",
-							"order": 1
-						},
-						{
-							"id": "4",
-							"name": "Spoken English",
-							"professor": "Pr.OUATAT",
-							"day": "friday",
-							"time": "11--12:30",
-							"hall": "AMP4",
-							"order": 6
-						},
-						{
-							"id": "5",
-							"name": "Guided Reading",
-							"professor": "Pr.HANDOUR",
-							"day": "friday",
-							"time": "09:30--11",
-							"hall": "SAL30",
-							"order": 5
-						},
-						{
-							"id": "6",
-							"name": "Study Skills",
-							"professor": "Pr.NAHI",
-							"day": "thursday",
-							"time": "15:30--17",
-							"hall": "SAL10",
-							"order": 4
-						},
-						{
-							"id": "7",
-							"name": "Language (French)",
-							"professor": "Pr.HACHIMI",
-							"day": "saturday",
-							"time": "11--12:30",
-							"hall": "AMP3",
-							"order": 7
-						}
-					]
-				},
-				{
-					"className": "class 4",
-					"modules": [
-						{
-							"id": "1",
-							"name": "Reading Comprehension and Précis",
-							"professor": "Pr.CHAKOUR",
-							"day": "monday",
-							"time": "14--15:30",
-							"hall": "SAL02",
-							"order": 1
-						},
-						{
-							"id": "2",
-							"name": "Paragraph Writing",
-							"professor": "Pr.BYCHOU",
-							"day": "monday",
-							"time": "15:30--17",
-							"hall": "SAL29",
-							"order": 2
-						},
-						{
-							"id": "3",
-							"name": "Grammar 1",
-							"professor": "Pr.BYCHOU",
-							"day": "tuesday",
-							"time": "09:30--11",
-							"hall": "AMP2",
-							"order": 3
-						},
-						{
-							"id": "4",
-							"name": "Spoken English",
-							"professor": "Pr.AGBALOU",
-							"day": "tuesday",
-							"time": "11--12:30",
-							"hall": "AMP2",
-							"order": 4
-						},
-						{
-							"id": "5",
-							"name": "Guided Reading",
-							"professor": "Pr.HANDOUR",
-							"day": "monday",
-							"time": "15:30--17",
-							"hall": "AMP2",
-							"order": 6
-						},
-						{
-							"id": "6",
-							"name": "Study Skills",
-							"professor": "Pr.NAHI",
-							"day": "thursday",
-							"time": "14--15:30",
-							"hall": "SAL10",
-							"order": 5
-						},
-						{
-							"id": "7",
-							"name": "Language (French)",
-							"professor": "Pr.HACHIMI",
-							"day": "saturday",
-							"time": "14--15:30",
-							"hall": "AMP3",
-							"order": 7
-						}
-					]
-				},
-				{
-					"className": "class 5",
-					"modules": [
-						{
-							"id": "1",
-							"name": "Reading Comprehension and Precis",
-							"professor": "Pr.NADIF",
-							"day": "saturday",
-							"time": "08--09:30",
-							"hall": "AMP2",
-							"order": 6
-						},
-						{
-							"id": "2",
-							"name": "Paragraph Writing",
-							"professor": "Pr.OUATAT",
-							"day": "wednesday",
-							"time": "15:30--17",
-							"hall": "SAL31",
-							"order": 3
-						},
-						{
-							"id": "3",
-							"name": "Grammar 1",
-							"professor": "Pr.ZANZOUN",
-							"day": "thursday",
-							"time": "09:30--11",
-							"hall": "SAL05",
-							"order": 4
-						},
-						{
-							"id": "4",
-							"name": "Spoken English",
-							"professor": "Pr.AGBALOU",
-							"day": "tuesday",
-							"time": "15:30--17",
-							"hall": "AMP5",
-							"order": 2
-						},
-						{
-							"id": "5",
-							"name": "Guided Reading",
-							"professor": "Pr.HANDOUR",
-							"day": "thursday",
-							"time": "17--18:30",
-							"hall": "AMP2",
-							"order": 5
-						},
-						{
-							"id": "6",
-							"name": "Study Skills",
-							"professor": "Pr.MODDAKIR",
-							"day": "monday",
-							"time": "15:30--17",
-							"hall": "SAL28",
-							"order": 1
-						},
-						{
-							"id": "7",
-							"name": "Language (French)",
-							"professor": "Pr.HACHIMI",
-							"day": "saturday",
-							"time": "15:30--17",
-							"hall": "AMP3",
-							"order": 7
-						}
-					]
-				},
-				{
-					"className": "class 6",
-					"modules": [
-						{
-							"id": "1",
-							"name": "Reading Comprehension and Precis",
-							"professor": "Pr.NADIF",
-							"day": "saturday",
-							"time": "09:30--11",
-							"hall": "AMP2",
-							"order": 6
-						},
-						{
-							"id": "2",
-							"name": "Paragraph Writing",
-							"professor": "Pr.OUATAT",
-							"day": "wednesday",
-							"time": "17--18:30",
-							"hall": "SAL31",
-							"order": 4
-						},
-						{
-							"id": "3",
-							"name": "Grammar 1",
-							"professor": "Pr.ZANZOUN",
-							"day": "thursday",
-							"time": "11--12:30",
-							"hall": "SAL02",
-							"order": 5
-						},
-						{
-							"id": "4",
-							"name": "Spoken English",
-							"professor": "Pr.AGBALOU",
-							"day": "tuesday",
-							"time": "14--15:30",
-							"hall": "AMP5",
-							"order": 3
-						},
-						{
-							"id": "5",
-							"name": "Guided Reading",
-							"professor": "Pr.EL HADARI",
-							"day": "tuesday",
-							"time": "08--09:30",
-							"hall": "SAL30",
-							"order": 2
-						},
-						{
-							"id": "6",
-							"name": "Study Skills",
-							"professor": "Pr.MODDAKIR",
-							"day": "monday",
-							"time": "14--15:30",
-							"hall": "SAL28",
-							"order": 1
-						},
-						{
-							"id": "7",
-							"name": "Language (French)",
-							"professor": "Pr.HACHIMI",
-							"day": "saturday",
-							"time": "17--18:30",
-							"hall": "AMP3",
-							"order": 7
+							"name": "coming soon",
+							"professor": "",
+							"day": "",
+							"time": "",
+							"hall": "",
+							"order": ""
 						}
 					]
 				}
@@ -450,314 +56,25 @@
 			"id": 3,
 			"classes": [
 				{
-					"className": "Class 1",
+					"className": "coming soon",
 					"modules": [
 						{
-							"id": "15",
-							"name": "Extensive Reading",
-							"professor": "Pr.AGLIZ",
-							"day": "thursday",
-							"time": "14--15:30",
-							"hall": "SAL28",
-							"order": 4
-						},
-						{
-							"id": "16",
-							"name": "Composition 2",
-							"professor": "Pr.BYCHOU",
-							"day": "wednesday",
-							"time": "14--15:30",
-							"hall": "SAL27",
-							"order": 3
-						},
-						{
-							"id": "17",
-							"name": "Grammar 3",
-							"professor": "Pr.ZAID",
-							"day": "tuesday",
-							"time": "14--15:30",
-							"hall": "SAL02",
-							"order": 2
-						},
-						{
-							"id": "18",
-							"name": "Public Speaking and Debating",
-							"professor": "Pr.KOUBALI",
-							"day": "tuesday",
-							"time": "11--12:30",
-							"hall": "SAL27",
-							"order": 1
-						},
-						{
-							"id": "19",
-							"name": "British and US Culture and Society",
-							"professor": "Pr.AGLIZ",
-							"day": "thursday",
-							"time": "15:30--17",
-							"hall": "SAL28",
-							"order": 5
-						},
-						{
-							"id": "20",
-							"name": "Initiation to Translation",
-							"professor": "Pr.AGLIZ",
-							"day": "friday",
-							"time": "9:30--11",
-							"hall": "SAL29",
-							"order": 6
-						}
-					]
-				},
-				{
-					"className": "Class 2",
-					"modules": [
-						{
-							"id": "15",
-							"name": "Extensive Reading",
-							"professor": "Pr.AGLIZ",
-							"day": "friday",
-							"time": "8--9:30",
-							"hall": "SAL30",
-							"order": 6
-						},
-						{
-							"id": "16",
-							"name": "Composition 2",
-							"professor": "Pr.BYCHOU",
-							"day": "wednesday",
-							"time": "15:30--17",
-							"hall": "SAL27",
-							"order": 2
-						},
-						{
-							"id": "17",
-							"name": "Grammar 3",
-							"professor": "Pr.ZAID",
-							"day": "tuesday",
-							"time": "15:30--17",
-							"hall": "SAL02",
-							"order": 1
-						},
-						{
-							"id": "18",
-							"name": "Public Speaking and Debating",
-							"professor": "Pr.ZANZOUN",
-							"day": "thursday",
-							"time": "8--9:30",
-							"hall": "SAL05",
-							"order": 3
-						},
-						{
-							"id": "19",
-							"name": "British and US Culture and Society",
-							"professor": "Pr.MOUHTARIM",
-							"day": "thursday",
-							"time": "9:30--11",
-							"hall": "SAL10",
-							"order": 4
-						},
-						{
-							"id": "20",
-							"name": "Initiation to Translation",
-							"professor": "Pr.AGLIZ",
-							"day": "thursday",
-							"time": "17--18:30",
-							"hall": "SAL28",
-							"order": 5
-						}
-					]
-				},
-				{
-					"className": "Class 3",
-					"modules": [
-						{
-							"id": "15",
-							"name": "Extensive Reading",
-							"professor": "Pr.HANDOUR",
-							"day": "thursday",
-							"time": "14--15:30",
-							"hall": "SAL26",
-							"order": 5
-						},
-						{
-							"id": "16",
-							"name": "Composition 2",
-							"professor": "Pr.HADARI",
-							"day": "tuesday",
-							"time": "9:30--11",
-							"hall": "SAL29",
-							"order": 1
-						},
-						{
-							"id": "17",
-							"name": "Grammar 3",
-							"professor": "Pr.OUATAT",
-							"day": "thursday",
-							"time": "11--12:30",
-							"hall": "SAL13",
-							"order": 4
-						},
-						{
-							"id": "18",
-							"name": "Public Speaking and Debating",
-							"professor": "Pr.HADARI",
-							"day": "friday",
-							"time": "11--12:30",
-							"hall": "SAL02",
-							"order": 6
-						},
-						{
-							"id": "19",
-							"name": "British and US Culture and Society",
-							"professor": "Pr.KRIMI",
-							"day": "tuesday",
-							"time": "11--12:30",
-							"hall": "SAL08",
-							"order": 2
-						},
-						{
-							"id": "20",
-							"name": "Initiation to Translation",
-							"professor": "Pr.JEBBAR",
-							"day": "tuesday",
-							"time": "15:30--17",
-							"hall": "SAL05",
-							"order": 3
-						}
-					]
-				},
-				{
-					"className": "Class 4",
-					"modules": [
-						{
-							"id": "15",
-							"name": "Extensive Reading",
-							"professor": "Pr.HANDOUR",
-							"day": "friday",
-							"time": "8--9:30",
-							"hall": "SAL29",
-							"order": 5
-						},
-						{
-							"id": "16",
-							"name": "Composition 2",
-							"professor": "Pr.HADARI",
-							"day": "thursday",
-							"time": "17--18:30",
-							"hall": "SAL29",
-							"order": 4
-						},
-						{
-							"id": "17",
-							"name": "Grammar 3",
-							"professor": "Pr.OUATAT",
-							"day": "thursday",
-							"time": "9:30--11",
-							"hall": "SAL13",
-							"order": 2
-						},
-						{
-							"id": "18",
-							"name": "Public Speaking and Debating",
-							"professor": "Pr.HADARI",
-							"day": "friday",
-							"time": "9:30--11",
-							"hall": "SAL02",
-							"order": 6
-						},
-						{
-							"id": "19",
-							"name": "British and US Culture and Society",
-							"professor": "Pr.HADARI",
-							"day": "thursday",
-							"time": "15:30--17",
-							"hall": "SAL29",
-							"order": 3
-						},
-						{
-							"id": "20",
-							"name": "Initiation to Translation",
-							"professor": "Pr.JEBBAR",
-							"day": "tuesday",
-							"time": "14--15:30",
-							"hall": "SAL28",
-							"order": 1
+							"id": "1",
+							"name": "coming soon",
+							"professor": "",
+							"day": "",
+							"time": "",
+							"hall": "",
+							"order": ""
 						}
 					]
 				}
 			],
 			"modules": [
 				{
-					"id": "15",
-					"name": "Extensive Reading",
-					"Pr.HANDOUR": [
-						"1_M15_COMPLETE_COURSE_HANDOUR"
-					],
-					"Pr.AGLIZ":[
-						"4_M15_LECTURE_4_AGLIZ",
-						"5_M15_LECTURE_5_AGLIZ"
-					]
-				},
-				{
-					"id": "16",
-					"name": "Composition 2",
-					"Pr.HADARI":[
-						"1_M16_COMPLETE_COURSE_HADARI"
-					],
-					"Pr.BYCHOU": [
-						"1_M16_COMPLETE_COURSE_BYCHOU"
-					]
-				},
-				{
-					"id": "17",
-					"name": "Grammar 3",
-					"Pr.OUATAT":[
-						"0_M17_COMPLETE_COURSE_OUATAT",
-						"1_M17_EXERCISES_OUATAT"
-
-					],
-					"Pr.ZAID": [
-						"1_M17_COMPLETE_COURSE_ZAID"
-					]
-				},
-				{
-					"id": "18",
-					"name": "Public Speaking and Debating",
-					"Pr.HADARI":[
-						"1_M18_COMPLETE_COURSE_HADARI"
-					],
-					"Pr.ZANZOUN": [
-						"1_M18_COMPLETE_COURSE_ZANZOUN"
-					],
-					"Pr.KOUBALI":[
-						"1_M18_LECTURE_1_KOUBALI",
-						"2_M18_COMPLETE_COURSE_KOUBALI"
-					]
-				},
-				{
-					"id": "19",
-					"name": "British and US Culture and Society",
-					"Pr.HADARI":[
-						"1_M19_UK_COMPLETE_COURSE_HADARI",
-						"2_M19_USA_COMPLETE_COURSE_HADARI"
-					],
-					"Pr.KRIMI":[
-						"1_M19_COMPLETE_COURSE_KRIMI"
-					],
-					"Pr.AGLIZ":[
-						"1_M19_COMPLETE_COURSE_AGLIZ"
-					]
-
-				},
-				{
-					"id": "20",
-					"name": "Initiation to Translation",
-					"Pr.JEBBAR":[
-						"1_M19_COMPLETE_COURSE_JEBBAR"
-					],
-					"Pr.AGLIZ":[
-						"1_M20_COMPLETE_COURSE_AGLIZ"
-					]
+					"id": "1",
+					"name": "",
+					"Pr.": []
 				}
 			]
 		},
@@ -788,74 +105,42 @@
 			]
 		}
 	],
+
 	"logs": [
 
 		{
 			"op": "+",
-			"details": "M19 - complete USA Course - S3-G4",
-			"date": "2022-01-19"
+			"details": "END of semester",
+			"date": "2022-02-10"
 		},
 		{
 			"op": "+",
-			"details": "M19 - complete Course - S3-G1",
-			"date": "2022-01-04"
+			"details": "END of semester",
+			"date": "2022-02-10"
 		},
 		{
 			"op": "+",
-			"details": "M17 - Exercises - S3-G3&G4",
-			"date": "2022-01-03"
+			"details": "END of semester",
+			"date": "2022-02-10"
 		},
 		{
 			"op": "+",
-			"details": "M18 - complete Course - S3-G3&G4",
-			"date": "2022-01-03"
+			"details": "END of semester",
+			"date": "2022-02-10"
 		},
 		{
 			"op": "+",
-			"details": "M15 - complete Course - S3-G3&G4",
-			"date": "2022-01-03"
+			"details": "END of semester",
+			"date": "2022-02-10"
 		},
 		{
 			"op": "+",
-			"details": "M16 - complete Course - S3-G3&G4",
-			"date": "2022-01-03"
-		},
-		{
-			"op": "+",
-			"details": "M20 - complete Course - S3-G3&G4",
-			"date": "2021-12-22"
-		},
-		{
-			"op": "+",
-			"details": "M20 - complete Course - S3-G1&G2",
-			"date": "2021-12-18"
-		},
-		{
-			"op": "+",
-			"details": "M19 - Lecture 09 TO 10 - S3-G1&G2",
-			"date": "2021-12-18"
-		},
-		{
-			"op": "+",
-			"details": "M16 - Lecture 07 - S3-G3&G4",
-			"date": "2021-12-18"
-		},
-		{
-			"op": "+",
-			"details": "M18 - Lecture 09 - S3-G3&G4",
-			"date": "2021-12-18"
-		},
-		{
-			"op": "+",
-			"details": "M19 - complete UK Course - S3-G4",
-			"date": "2021-12-12"
-		},
-		{
-			"op": "+",
-			"details": "M15 - Rest of the Course - S3-G3&G4",
-			"date": "2021-12-12"
+			"details": "END of semester",
+			"date": "2022-02-10"
 		}
+		
 	],
+	
 	"quotes":[
 		{
 			"quote":"Good, better, best. Never let it rest. 'Til your good is better and your better is best.",
@@ -959,6 +244,11 @@
 		}
 	],
 	"stories": [
+		{
+			"title":"The Scarlet Letter",
+			"author":"Nathaniel Hawthorne",
+			"published":"1850"
+		},
 		{
 			"title":"Young Goodman Brown",
 			"author":"Nathaniel Hawthorne",
