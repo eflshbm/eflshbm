@@ -15,6 +15,7 @@ Email : [eflshbm@gmail.com](eflshbm@gmail.com)
 1. News.
 2. Code refactoring.
 3. Add info to json file.
-4. (...)
+4. Add a loader gif to stories secs.
+5. (...)
 
 NB: This is Not the faculty official Website.
