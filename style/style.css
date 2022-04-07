@@ -2,7 +2,20 @@
 /*contact: eflshbm@gmail.com*/
 /*31/10/2021*/
 /*Beni Melll Morocco*/
-
+#dend{
+  display: none;
+}
+section#endmsg{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border: 1px solid;
+  padding: 15px;
+  border-radius: 5px;
+}
 @font-face {
   font-family: 'Roboto-Light';
   font-style: normal;
